@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+#root {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
+  background-image:url("./resources/background.svg");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.text-container{
+  margin-left: 5%;
+  margin-right: auto;
+  display: block;
+  flex: 5;
+}
+
+.row{
+  flex: 1;
+  display: flex;
+  height: 20%
+}
+
+.rocket-img{
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 3%;
+}
+
+.hero-img{
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 0%;
+  padding-top: 2%;
+  padding-right: 25%;
+  flex: 1;
+}
+
+.mars-text-header{
+  font-family: "Pattaya";
+  font-size: 65pt;  
+  color:cornflowerblue;
+  margin-left: 15%;
+  padding-left: 2%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: block;
+}
+
+.mars-text{
+  font-family: "Pattaya";
+  font-size: 30pt;  
+  color:white;
+  margin-left: 15%;
+  padding-left: 2%;
+  padding-right: 10%;
+  margin-top: 0%;
+  display: block;
+}
+
+.countdown-column{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 20%
+}
+
+.countdown-text{
+  font-family: "Pattaya";
+  font-size: 30pt;  
+  color:white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  display: block;
+}
+
+.countdown-numbers{
+  text-align: center;
+  font-family: "Pattaya";
   color: white;
+  font-size: 45pt;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.countdown-dots{
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.countdown-background{
+  background-color: #ebebeb5d;
+  padding: 0.4%;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container{
+    height: 200%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .rocket-img{
+    height: 10%;
+  }
+
+  .mars-text-header{
+    font-size: 30pt;
+    margin-left: 0%;
+  }
+
+  .mars-text{
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 20pt;
+  }
+
+  .hero-img{
+    margin-right: -15%;
+    height: 40%;
+  }
+
+  .row{
+    display: block;
+  }
+
+  .countdown-column{
+    margin-top: -10%;
+  }
+
+  .countdown-numbers{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .countdown-dots{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
